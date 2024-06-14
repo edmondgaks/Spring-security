@@ -1,5 +1,5 @@
 package com.edmond.mysecurity.entity;
-mport lombok.AllArgsConstructor;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

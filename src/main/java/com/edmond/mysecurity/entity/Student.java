@@ -2,6 +2,9 @@ package com.edmond.mysecurity.entity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
+
+import java.util.List;
 
 @Entity
 @Data
@@ -14,6 +17,7 @@ public class Student {
     private String firstName;
     @Column(nullable = false, length = 100)
     private String lastName;
+    @Getter
     @Column(nullable = false, unique = true, length = 100)
     private String email;
     @ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
@@ -42,9 +46,7 @@ public class Student {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    public String getEmail() {
-        return email;
-    }
+
     public void setEmail(String email) {
         this.email = email;
     }

@@ -1,7 +1,8 @@
 package com.edmond.mysecurity.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import com.edmond.mysecurity.entity.Student;
+import com.edmond.mysecurity.entity.Laptop;
+
 @Repository
-public interface StudentRepository extends JpaRepository<Student, Integer> {
+public interface LaptopRepository extends JpaRepository<Laptop, Integer> {
 }

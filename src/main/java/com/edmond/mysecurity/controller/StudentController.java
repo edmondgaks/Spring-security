@@ -15,7 +15,6 @@ import com.edmond.mysecurity.service.UserDataService;
 
 @RestController
 @RequestMapping("/users")
-
 public class StudentController {
     @Autowired
     private UserDataService service;

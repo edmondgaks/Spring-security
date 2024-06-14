@@ -1,5 +1,4 @@
 package com.edmond.mysecurity.controller;
 
-public class UserController {
-
+public class StudentController {
 }
